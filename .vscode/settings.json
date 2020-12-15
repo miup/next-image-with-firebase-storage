@@ -1,0 +1,13 @@
+{
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.insertFinalNewline": true,
+  "javascript.suggestionActions.enabled": false
+}

@@ -1,0 +1,5 @@
+*.css.d.ts
+node_modules
+dist
+.eslintrc.js
+
