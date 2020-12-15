@@ -9,4 +9,7 @@ module.exports = {
   // css
   cssModules: true,
   distDir: '../../dist/functions/next',
+  images: {
+    domains: ['storage.googleapis.com', 'firebasestorage.googleapis.com'],
+  },
 }

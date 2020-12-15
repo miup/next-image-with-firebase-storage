@@ -29,7 +29,7 @@ export const ssr = functionsBuilder((f) =>
     res.set('X-Frame-Options', 'deny')
     res.set(
       'Content-Security-Policy',
-      "default-src 'self' https: 'unsafe-inline'; img-src https: data:"
+      "default-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:;"
     )
 
     await app.prepare()
@@ -39,4 +39,4 @@ export const ssr = functionsBuilder((f) =>
     logger.log(`handle time: ${afterTimeHandle - beforeTimeHandle}`)
     return
   })
-)
+)((f) => f.runWith({ memory: '1GB' }))
